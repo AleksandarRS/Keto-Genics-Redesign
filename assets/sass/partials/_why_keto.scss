@@ -1,0 +1,29 @@
+.why-keto-product-section-wrapper {
+    padding-bottom: 77px;
+    padding-top: 77px;
+    @include max-mq ($ls) {
+        padding-bottom: 50px;
+        padding-top: 40px;
+    }
+    @include max-mq ($mb) {
+        padding-bottom: 28px;
+        padding-top: 30px;
+    }
+    .why-product-text-section {
+        padding-top: 18px;
+    }
+    .why-keto-product-row {
+        @include max-mq ($lg) {
+            align-items: flex-end;
+        }
+    }
+    .why-ket-slider-item {
+        max-width: 655px;
+        p {
+            max-width: 555px;
+        }
+    }
+}
+#howitworks, #promise {
+    text-align: left;
+}

@@ -1,0 +1,87 @@
+
+.button {
+    border-radius: 0;
+    border: 1px solid;
+    display: inline-block;
+    font-family: $secondary-font;
+    font-size: $font-size-base - 0.02;
+    font-weight: $font-weight-blc;
+    padding: 11px 26px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    transition: all .5s;
+    vertical-align: middle;
+    letter-spacing: 0;
+    &.button-large-p {
+        padding: 15px 71px;
+    }
+    &.button-white {
+        background-color: $white;
+        border-color: $white;
+        color: $primary-color;
+        &:hover {
+            background-color: $primary-color;
+            border-color: $primary-color;
+            color: $white;
+        }
+    }
+    &.button-transparent {
+        background-color: transparent;
+        border-color: $white;
+        color: $white;
+        &:hover {
+            background-color: $white;
+            border-color: $primary-color;
+            color: $primary-color;
+        }
+    }
+    &.button-primary {
+        background-color: $primary-color;
+        border: 1px solid $primary-color;
+        color: $white;
+        &:hover {
+            background-color: $white;
+            color: $primary-color;
+        }
+    }
+    &.button-secondary {
+        background-color: $secondary-color;
+        border-color: $secondary-color;
+        color: $white;
+        &:hover {
+            background-color: $primary-color;
+            border-color: $primary-color;
+            color: $white;
+        }
+    }
+}
+.btn-checkout-primary {
+    background-color: $secondary-color;
+    border: 1px solid $secondary-color;
+    &:hover {
+        background-color: $white;
+        color: $secondary-color !important;
+    }
+    
+}
+
+.btn-outline-primary {
+    background-color: $secondary-color;
+    color: $white;
+    border-color: $secondary-color;
+    text-transform: uppercase;
+    font-size: 1em;
+    .best-value & {
+        background-color: $white;
+        border-color: $white;
+        color: $primary-color;
+    }
+    &.btn-lg {
+        padding: 1rem 0.7rem;
+    }
+    &:hover {
+        color: $white;
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+}

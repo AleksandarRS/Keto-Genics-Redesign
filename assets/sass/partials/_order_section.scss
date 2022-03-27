@@ -1,0 +1,90 @@
+#ship_now {
+    padding-top: 35px;
+    a {
+        color: $product-color-2;
+        transition: color 0.5s;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+    > div {
+        > div {
+            > div {
+                @include max-mq ($xs) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    .cart-notice {
+        font-size: $font-size-base;
+    }
+    .form-control {
+        color: $grey-300;
+        appearance: auto;
+    }
+}
+
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content;
+	}
+
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&::-ms-input-placeholder {
+		@content;
+	}
+
+    &::placeholder {
+        @content;
+    }
+}
+@include placeholder {
+    color: $grey-300 !important;
+}
+
+// .lp-form-wrapper {
+//     padding-top: 20px;
+//     .form-group {
+//         border-radius: 0;
+//         padding: 0 18px;
+//         background: $white;
+//         margin-bottom: 39px;
+//     }
+//     .form-control {
+//         color: $grey-300;
+//     }
+//     input,
+//     select {
+//         color: $grey-300;
+//         appearance: auto;
+//         background: transparent;
+//         border: 1px solid $grey-100;
+
+//         &:hover,
+//         &:focus {
+//             outline: none;
+//             box-shadow: none;
+//         }
+
+        
+//     }
+
+//     select {
+//         color: $grey-300;
+//         option {
+//             color: black;
+//             &:first-child {
+//                 color: #a1a1a1;
+//             }
+//         }
+//     }
+// }
