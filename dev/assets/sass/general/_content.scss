@@ -1,0 +1,80 @@
+body {
+    font-size: 15px;
+    p {
+        font-size: $font-size-base;
+        line-height: 1.5;
+        font-size: 15px;
+    }
+    a {
+        font-size: 15px;
+    }
+}
+html {
+    body,
+    div,
+    p,
+    li,
+    input, 
+    textarea, 
+    blockquote,
+    q {
+        font-family: $primary-font;
+    }
+}
+
+.content-label {
+    display: block;
+    font-family: $secondary-color;
+    font-weight: $font-weight-blc;
+    // font-weight: $font-weight-r;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.align-center {
+    text-align: center;
+}
+
+#upsell-modal {
+    .modal-content {
+        background-color: transparent;
+        z-index: 1;
+        @include min-mq ($max-xxl + 30) {
+            justify-content: center;
+        }
+        
+    }
+    
+    &.modal.show {
+        background: #FFC3DC;
+        background: -webkit-repeating-radial-gradient(ellipse farthest-corner at bottom right, #FFC3DC 0%, #97B5FC 100%);
+        background: -moz-repeating-radial-gradient(ellipse farthest-corner at bottom right, #FFC3DC 0%, #97B5FC 100%);
+        background: repeating-radial-gradient(ellipse farthest-corner at bottom right, #FFC3DC 0%, #97B5FC 100%);
+    } 
+}
+
+.relative {
+    position: relative;
+}
+
+.container {
+    @include min-mq ($mac + 10) {
+        max-width: $container-width;
+    }
+}
+
+.white-content {
+    color: $white
+}
+
+.left-calc {
+    @extend %left-calc;
+}
+
+.right-calc {
+    @extend %right-calc;
+}
+
+.text-secondary-color {
+    color: $secondary-color;
+}
