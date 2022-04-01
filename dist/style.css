@@ -492,14 +492,18 @@ nav.navbar ul.navbar-nav li a:hover {
   border-color: #1D1D1B;
 }
 
-body .form label,
-body form label {
+.contact-us-form-inner .form label {
   display: none;
 }
 
-body .form input,
+.sidebar-content input[type="checkbox"] {
+  position: relative;
+  top: 2px;
+}
+
+body .form input:not([type="checkbox"]):not([type="radio"]),
 body .form textarea,
-body form input,
+body form input:not([type="checkbox"]):not([type="radio"]),
 body form textarea {
   padding: 11px 24px;
   font-family: "MagdaClean", "Open Sans", sans-serif !important;
@@ -509,57 +513,57 @@ body form textarea {
   /*---- Placeholder ----*/
 }
 
-body .form input::-webkit-input-placeholder,
+body .form input:not([type="checkbox"]):not([type="radio"])::-webkit-input-placeholder,
 body .form textarea::-webkit-input-placeholder,
-body form input::-webkit-input-placeholder,
+body form input:not([type="checkbox"]):not([type="radio"])::-webkit-input-placeholder,
 body form textarea::-webkit-input-placeholder {
   color: #A7A7A7 !important;
   opacity: 1;
 }
 
-body .form input\:-moz-placeholder,
+body .form input:not([type="checkbox"]):not([type="radio"])\:-moz-placeholder,
 body .form textarea\:-moz-placeholder,
-body form input\:-moz-placeholder,
+body form input:not([type="checkbox"]):not([type="radio"])\:-moz-placeholder,
 body form textarea\:-moz-placeholder {
   color: #A7A7A7 !important;
   opacity: 1;
 }
 
-body .form input::-moz-placeholder,
+body .form input:not([type="checkbox"]):not([type="radio"])::-moz-placeholder,
 body .form textarea::-moz-placeholder,
-body form input::-moz-placeholder,
+body form input:not([type="checkbox"]):not([type="radio"])::-moz-placeholder,
 body form textarea::-moz-placeholder {
   color: #A7A7A7 !important;
   opacity: 1;
 }
 
-body .form input\:-ms-input-placeholder,
+body .form input:not([type="checkbox"]):not([type="radio"])\:-ms-input-placeholder,
 body .form textarea\:-ms-input-placeholder,
-body form input\:-ms-input-placeholder,
+body form input:not([type="checkbox"]):not([type="radio"])\:-ms-input-placeholder,
 body form textarea\:-ms-input-placeholder {
   color: #A7A7A7 !important;
   opacity: 1;
 }
 
-body .form input*::-webkit-input-placeholder,
+body .form input:not([type="checkbox"]):not([type="radio"])*::-webkit-input-placeholder,
 body .form textarea*::-webkit-input-placeholder,
-body form input*::-webkit-input-placeholder,
+body form input:not([type="checkbox"]):not([type="radio"])*::-webkit-input-placeholder,
 body form textarea*::-webkit-input-placeholder {
   color: #A7A7A7 !important;
   opacity: 1;
 }
 
-body .form input*:-moz-placeholder,
+body .form input:not([type="checkbox"]):not([type="radio"])*:-moz-placeholder,
 body .form textarea*:-moz-placeholder,
-body form input*:-moz-placeholder,
+body form input:not([type="checkbox"]):not([type="radio"])*:-moz-placeholder,
 body form textarea*:-moz-placeholder {
   color: #A7A7A7 !important;
   opacity: 1;
 }
 
-body .form input*:-ms-input-placeholder,
+body .form input:not([type="checkbox"]):not([type="radio"])*:-ms-input-placeholder,
 body .form textarea*:-ms-input-placeholder,
-body form input*:-ms-input-placeholder,
+body form input:not([type="checkbox"]):not([type="radio"])*:-ms-input-placeholder,
 body form textarea*:-ms-input-placeholder {
   color: #A7A7A7 !important;
   opacity: 1;
