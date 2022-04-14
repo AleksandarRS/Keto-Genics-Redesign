@@ -95,6 +95,19 @@ $(document).ready(function(){
     //     nextArrow: '<button class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i>'
     // });
 
+    if ($(".single-post-slider").length) {
+        $('.single-post-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            infinite: false,
+            fade: true,
+            arrows: true,
+            prevArrow: '<button class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i>',
+            nextArrow: '<button class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i>'
+        });
+    }
+
     if ($(".product-slider-for").length) {
         $('.product-slider-for').slick({
             slidesToShow: 1,
