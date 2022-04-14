@@ -4,9 +4,6 @@
     margin-top: 85px;
     display: flex;
     align-items: flex-end;
-    // @include min-mq ($mac) {
-    //     min-height: 700px;
-    // }
     @include max-mq ($ls) {
         min-height: 425px;
     }
@@ -25,6 +22,21 @@
         }
     }
 }
+
+.blog-hero-section {
+    margin-top: 85px;
+    padding: 49px 0 47px;
+    @include max-mq ($md) {
+        margin-top: 76px;
+    }
+    @include max-mq ($mb) {
+        padding: 37px 0;
+    }
+    .main-title {
+        margin-bottom: 0.25rem;
+    }
+}
+
 .hero-content-text {
     padding-top: 0;
     .hero-text {

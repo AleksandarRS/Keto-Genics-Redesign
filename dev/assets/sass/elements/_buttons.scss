@@ -28,6 +28,16 @@
             color: $white;
         }
     }
+    &.button-white-primary {
+        background-color: $white;
+        border-color: $primary-color;
+        color: $primary-color;
+        &:hover {
+            background-color: $primary-color;
+            border-color: $primary-color;
+            color: $white;
+        }
+    }
     &.button-transparent {
         background-color: transparent;
         border-color: $white;

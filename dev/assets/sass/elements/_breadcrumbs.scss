@@ -1,0 +1,10 @@
+.breadcrumbs-wrap {
+    a {
+        color: $primary-color;
+        
+    }
+    a, span {
+        font-size: $font-size-small - 0.075;
+        letter-spacing: -0.3px;
+    }
+}

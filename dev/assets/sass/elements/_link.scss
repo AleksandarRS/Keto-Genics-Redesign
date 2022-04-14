@@ -1,0 +1,23 @@
+.link {
+    display: inline-block;
+    vertical-align: middle;
+    @include transition-all;
+    letter-spacing: 0;
+    &.link-primary {
+        color: $primary-color;
+    }
+    &.link-arrow-right {
+        &:hover {
+            i {
+                margin-left: 12px;
+            }
+        }
+        i {
+            @include transition-all;
+            margin-left: 8px;
+        }
+        img {
+            margin: 0;
+        }
+    }
+}

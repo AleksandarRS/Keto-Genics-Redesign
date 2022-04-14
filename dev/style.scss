@@ -21,8 +21,12 @@
 @import "assets/sass/general/footer";
 
 /* 4. Elements */
+@import "assets/sass/elements/link";
 @import "assets/sass/elements/buttons";
 @import "assets/sass/elements/forms";
+@import "assets/sass/elements/breadcrumbs";
+@import "assets/sass/elements/pagination";
+@import "assets/sass/elements/social_share";
 
 /* 4. Partials */
 @import "assets/sass/partials/hero_section";
@@ -32,8 +36,13 @@
 @import "assets/sass/partials/contact_us_section";
 @import "assets/sass/partials/what";
 @import "assets/sass/partials/product_page";
+@import "assets/sass/partials/latest_blog_posts";
+@import "assets/sass/partials/featured_blog_post";
 @import "assets/sass/partials/footer";
 
-/* 5. Plugins */
+/* 5. Templates */
+@import "assets/sass/templates/single_post";
+
+/* 6. Plugins */
 @import "assets/sass/plugins/tabs";
 @import "assets/sass/plugins/slick_slider";

@@ -1,0 +1,79 @@
+.latest-blog-posts-section {
+    border-bottom: 1px solid $tertiary-color;
+    padding-bottom: 97px;
+    padding-top: 97px;
+}
+
+.latest-blog-posts-items {
+    .button {
+        max-width: 171px;
+        width: 100%;
+    }
+}
+
+.latest-blog-posts-items-row  {
+    padding-bottom: 0;
+    padding-top: 22px;
+    .latest-blog-posts-item  {
+        padding-bottom: 20px;
+        .latest-blog-posts-item-inner {
+            height: 100%;
+            padding-bottom: 29px;
+        }
+        .latest-blog-posts-item-link {
+            color: $primary-color;
+            display: block;
+            position: relative;
+            padding-bottom: 19px;
+            height: 100%;
+            text-decoration: none;
+            &:hover {
+                .post-title {
+                    text-decoration: underline;
+                }
+                .link {
+                    i {
+                        margin-left: 12px;
+                    }
+                }
+                .latest-blog-post-featured-image {
+                    transform: scale(1.05);
+                }
+            }
+        }
+        .latest-blog-post-featured-image-wrap {
+            overflow: hidden;
+        }
+        .latest-blog-post-featured-image {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 300px;
+            transform: scale(1);
+            @include transition-all;
+        }
+        .latest-blog-post-date {
+            border-bottom: 1px solid $primary-color;
+            font-size: $font-size-small - 0.075;
+            letter-spacing: -0.3px;
+            padding: 16px 0 8px;
+        }
+        .post-heading {
+            padding-top: 13px;
+            @include min-mq ($mac) {
+                padding-right: 60px;
+            }
+        }
+        .post-title {
+            font-size: $font-size-h4 - 0.165;
+            text-transform: uppercase;
+            letter-spacing: -0.2px;
+            line-height: 1.4;
+        }
+        .read-more-link {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}

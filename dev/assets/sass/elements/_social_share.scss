@@ -1,0 +1,35 @@
+.single-post-page {
+    .social-share-options {
+        position: absolute;
+        @extend %left-calc-absolute;
+        z-index: 999;
+        background-color: $white;
+        padding: 20px;
+
+    }
+}
+.social-share-options {
+    a {
+        display: flex;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        border-radius: 50%;
+        border: 1px solid $primary-color;
+        background-color: $white;
+        @include transition-all;
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:hover {
+            background-color: $primary-color;
+            svg {
+                path {
+                    fill: $white;
+                }
+            }
+        }
+    }
+}
