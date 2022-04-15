@@ -1,0 +1,21 @@
+blockquote {
+    background-color: $primary-color;
+    color: $white;
+    font-family: $secondary-font;
+    font-weight: $font-weight-blc;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 81px 15px 58px;
+    margin: 4.7em 0;
+    @include max-mq ($sm) {
+        padding: 51px 15px 38px;
+    }
+    p {
+        font-family: $secondary-font;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.5em;
+        max-width: $container-width-narrow - 200;
+        font-weight: $font-weight-blc;
+    }
+}

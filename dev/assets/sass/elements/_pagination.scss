@@ -54,6 +54,18 @@
       justify-content: center;
       margin: 0 26px;
       width: 41px;
+      @include max-mq ($sm) {
+        margin: 0 20px;
+      }
+      @include max-mq ($mb) {
+        margin: 0 15px;
+      }
+      @include max-mq ($ip) {
+        margin: 0 12px;
+      }
+      @include max-mq ($xs) {
+        margin: 0 8px;
+      }
       &:hover {
         color: $primary-color-100;
         background-color: rgba($color: $tertiary-color, $alpha: 0.6);

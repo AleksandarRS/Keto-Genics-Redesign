@@ -2,12 +2,33 @@
     + .latest-blog-posts-section {
         padding-bottom: 73px;
         padding-top: 78px;
+        @include max-mq ($ls) {
+            padding-bottom: 53px;
+            padding-top: 40px;
+        }
+        @include max-mq ($lg) {
+            padding-bottom: 45px;
+            padding-top: 33px;
+        }
+        @include max-mq ($sm + 1) {
+            padding-bottom: 27px;
+            padding-top: 0;
+        }
+        .latest-blog-posts-items-row {
+            @include max-mq ($sm + 1) {
+                padding-top: 10px;
+            }
+        }
     }
+    
 }
 .featured-blog-posts-item-link {
     color: $primary-color;
     display: flex;
     text-decoration: none;
+    @include max-mq ($sm + 1) {
+        flex-wrap: wrap;   
+    }
     &:hover {
         color: $primary-color;
         text-decoration: none;
@@ -20,7 +41,7 @@
             }
         }
         .featured-blog-post-featured-image {
-            transform: scale(1.05);
+            transform: scale(1.015);
         }
     }
 
@@ -28,6 +49,10 @@
         overflow: hidden;
         flex: 0 0 49%;
         max-width: 49%;
+        @include max-mq ($sm + 1) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
     }
     .featured-blog-post-featured-image {
         background-position: center;
@@ -36,6 +61,12 @@
         height: 100%;
         transform: scale(1);
         @include transition-all;
+        @include max-mq ($sm + 1) {
+            height: 300px;
+        }
+        @include max-mq ($ip) {
+            height: 255px;
+        }
     }
     .featured-blog-post-date-header-excerpt-button-wrap {
         flex: 0 0 51%;
@@ -51,6 +82,16 @@
         @include min-mq ($mac) {
             padding-left: 50px;
             padding-right: 0;
+        }
+
+        @include max-mq ($ls) {
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+        @include max-mq ($sm + 1) {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-left: 0;
         }
         
     }
@@ -77,6 +118,12 @@
         text-transform: uppercase;
         line-height: 1.3;
         letter-spacing: 0.5px;
+        @include max-mq ($lg) {
+			font-size: $font-size-h2 - 0.25;
+		}
+		@include max-mq ($ip - 20) {
+			font-size: $font-size-h2 - 0.35;
+		}
     }
 
     .post-excerpt-content {

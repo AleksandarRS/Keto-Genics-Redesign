@@ -7,6 +7,9 @@
     }
     .navbar-brand {
         max-width: 260px;
+        @include max-mq ($ls - 20) {
+            max-width: 220px;
+        }
         @include max-mq ($ip) {
             max-width: 210px;
         }
@@ -17,10 +20,16 @@ nav {
         background-color: $white !important;
         ul.navbar-nav {
             &#top-menu {
-                li {
+                > li {
+                    @include max-mq ($lg + 1) {
+                        text-align: center;
+                    }
                     a {
                         font-size: 16px !important;
                         padding: 15px 15px;
+                        @include max-mq ($ls - 20) {
+                            padding: 15px 9px;
+                        }
                     }
                     &:last-of-type {
                         margin-left: 10px;
@@ -31,6 +40,10 @@ nav {
                             padding-left: 22px;
                             padding-right: 22px;
                             @include transition-all;
+                            @include max-mq ($ls - 20) {
+                                padding-left: 15px;
+                                padding-right: 15px;
+                            }
                             &:hover {
                                 background-color: $white;
                                 color: $primary-color !important;
@@ -43,13 +56,104 @@ nav {
                         }
                     }
                 }
-                
+                .menu-item {
+                    position: relative;
+                    &.menu-item-has-children {
+                        &:hover {
+                            > .sub-menu {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                        a {
+                            @include max-mq ($lg + 1) {
+                                display: inline-block;
+                                padding: 15px 5px;
+                            }
+                        }
+                    }
+                    .desktop-icon {
+                        @include max-mq ($lg + 1) {
+                            display: none;
+                        }
+                    }
+                }
+                .sub-menu {
+                    padding-left: 0;
+                    @include min-mq ($lg + 1) {
+                        background-color: $white;
+                        box-shadow: 0 5px 20px rgba($color: $primary-color, $alpha: 0.1);
+                        left: -60px;
+                        margin: auto;
+                        opacity: 0;
+                        padding-bottom: 3px;
+                        padding: 0;
+                        position: absolute;
+                        right: -50px;
+                        text-align: center;
+                        top: 99%;
+                        visibility: hidden;
+                        width: 220px;
+                        z-index: 10;
+                        &.collapse {
+                            @include min-mq ($lg) {
+                                display: block;
+                            }
+                        }
+                    }
+                    
+                    .menu-item {
+                        display: block;
+                        text-transform: none;
+                        &:not(:last-child) {
+                            border-bottom: 1px solid rgba($color: $primary-color, $alpha: 0.1);
+                            @include max-mq ($lg + 1) {
+                                border-bottom: none;
+                            }
+                        }
+                        a {
+                            background-color: $white;
+                            padding: 15px 15px;
+                            display: block;
+                            width: 100%;
+
+                        }
+                    }
+                }
+                span.arrow-toggle {
+                    @include min-mq ($lg + 1) {
+                        display: none;
+                    }
+                    @include max-mq ($lg + 1) {
+                        bottom: auto;
+                        font-size: $font-size-base + 0.25;
+                        height: 31px;
+                        padding-left: 15px;
+                        padding-right: 5px;
+                        padding-bottom: 7px;
+                        padding-top: 7px;
+                        position: absolute;
+                        top: 7px;
+                        z-index: 9999;
+                    }
+                    &.collapsed {
+                        i {
+                            @include max-mq ($lg + 1) {
+                                transform: rotate(0);
+                            }
+                        }
+                    }
+                    i {
+                        @include max-mq ($lg + 1) {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
             }
             li {
                 a {
                     font-family: $secondary-font;
                     font-weight: $font-weight-blc;
-                    // font-weight: $font-weight-r;
                     color: $primary-color !important;
                     &:hover {
                         text-decoration: underline;
@@ -58,4 +162,5 @@ nav {
             }
         }
     }
+    
 }

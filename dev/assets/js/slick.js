@@ -101,7 +101,8 @@ $(document).ready(function(){
             slidesToScroll: 1,
             dots: false,
             infinite: false,
-            fade: true,
+            // fade: true,
+            adaptiveHeight: true,
             arrows: true,
             prevArrow: '<button class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i>',
             nextArrow: '<button class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i>'

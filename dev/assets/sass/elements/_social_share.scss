@@ -5,6 +5,28 @@
         z-index: 999;
         background-color: $white;
         padding: 20px;
+        @include max-mq ($mac + 10) {
+            left: calc(50vw - ( 1200px / 2 ) - 10px);
+        }
+        @include max-mq ($lg + 1) {
+            left: calc(50vw - ( 960px / 2 ) - 10px);
+        }
+        @include max-mq ($md ) {
+            left: auto;
+            position: static;
+            display: flex;
+            align-items: center;
+            max-width: $container-width-narrow - 240px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 15px;
+        }
+        a {
+            @include max-mq ($md ) {
+                margin-bottom: 0;
+                margin-right: 15px;
+            }
+        }
 
     }
 }

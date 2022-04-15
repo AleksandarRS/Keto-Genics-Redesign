@@ -33,7 +33,7 @@
     <link rel="stylesheet" type="text/css" href="cms/theme/Box/css/sidebar_cat.css" />
     <link rel="stylesheet" type="text/css" href="cms/theme/Box/css/style.css" />
 
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
 
     <script type="text/javascript" src="cms/theme/Box/js/jquery-3.4.1.min.js"></script>
@@ -48,7 +48,7 @@
     <div class="loading_m"></div>
     <div class="is-wrapper">
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar_allbg">
+        <nav class="navbar navbar-expand-xl fixed-top navbar_allbg">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="assets/images/Ketogenics-main-logo.png"
                         class="img-fluid logo-img" /></a>
@@ -63,7 +63,15 @@
 
                         <ul class="navbar-nav ml-auto sf-menu" id="top-menu">
                             <li><a href="index.html" id="link-8" title="Home" class="nav-link ">Home</a></li>
-                            <li><a href="products.html" id="link-9" class="nav-link  selected">Products</a></li>
+                            <li class="menu-item menu-item-has-children"><a href="products.html" id="link-9" class="nav-link  selected">Products <i class="desktop-icon fa fa-angle-down" aria-hidden="true"></i></a>
+                                <span class="arrow-toggle collapsed" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                <ul id="collapseExample" class="sub-menu collapse">
+                                    <li class="menu-item"><a href="products-keto-diet.html">True Keto Genics Diet</a></li>
+                                    <li class="menu-item"><a href="products-keto-cleanse.html">True Keto Genics Cleanse</a></li>
+                                    <li class="menu-item"><a href="products-keto-prebiotic-probiotic.html">Keto Genics Prebiotic + Probiotic</a></li>
+                                    <li class="menu-item"><a href="product-keto-diet-group.html">True Keto Genics Diet</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#" id="link-10" title="Cart" class="nav-link cart">Cart</a></li>
                         </ul>
                     </div>
@@ -157,7 +165,7 @@
                     </a>
                 </div>
 
-                <div class="container-narrow">
+                <div class="container-narrow single-content-container">
                     <div class="single-post-entry-content entry-content">
                         <h2>commodo nulla facilisi nullam</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -174,17 +182,13 @@
                             dignissim diam quis. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Viverra
                             vitae congue eu consequat.</p>
                         <div class="single-post-slider">
-                            <div class="single-post-slider-item">
-                                <img src="assets/images/blog/single-blog/single-post-slider-img.jpg" alt="">
+                            <div class="single-post-slider-item" style="background-image: url('assets/images/blog/single-blog/single-post-slider-img.jpg');" area-label="Single post slider image">
                             </div>
-                            <div class="single-post-slider-item">
-                                <img src="assets/images/blog/single-blog/Featured-main-post-Image.jpg" alt="">
+                            <div class="single-post-slider-item" style="background-image: url('assets/images/blog/single-blog/Featured-main-post-Image.jpg');" area-label="Single post slider image">
                             </div>
-                            <div class="single-post-slider-item">
-                                <img src="assets/images/blog/single-blog/single-post-slider-img.jpg" alt="">
+                            <div class="single-post-slider-item" style="background-image: url('assets/images/blog/single-blog/single-post-slider-img.jpg');" area-label="Single post slider image">
                             </div>
-                            <div class="single-post-slider-item">
-                                <img src="assets/images/blog/single-blog/Featured-main-post-Image.jpg" alt="">
+                            <div class="single-post-slider-item" style="background-image: url('assets/images/blog/single-blog/Featured-main-post-Image.jpg');" area-label="Single post slider image">
                             </div>
                         </div>
                         <h2>Sollicitudin nibh sit amet commodo nulla facilisi nullam</h2>
@@ -204,19 +208,124 @@
 
                 <div class="single-post-quote-section">
                     <blockquote>
-                        <p>Nullam eget felis eget nunc lobortis. Id cursus metus aliquam eleifend. Amet aliquam id diam maecenas ultricies mi. Facilisis gravida neque convallis a cras semper auctor neque</p>
+                        <img src="assets/images/quote-Icon.png" alt="quote icon of the blockquote">
+                        <p>Nullam eget felis eget nunc lobortis. Id cursus metus aliquam eleifend. Amet aliquam id diam maecenas ultricies mi. Facilisis gravida neque convallis a cras semper auctor neque.</p>
                     </blockquote>
                 </div>
 
-                <div class="container-narrow">
+                <div class="container-narrow single-content-container">
                     <div class="single-post-entry-content entry-content">
                         <h2>Elementum integer enim neque volutpat ac tincidunt vitae</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim lobortis scelerisque fermentum dui faucibus. Dignissim cras tincidunt lobortis feugiat. Egestas diam in arcu cursus euismod quis viverra nibh cras. Mi sit amet mauris commodo quis. Sollicitudin nibh sit amet commodo nulla facilisi nullam. Lectus urna duis convallis convallis. Lectus proin nibh nisl condimentum id venenatis a. Et odio pellentesque diam volutpat commodo sed. Tristique risus nec feugiat in fermentum posuere urna nec tincidunt.</p>
+                        <table style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>TGA Leistungen</th>
+                                    <th>Congue Eu Consequat</th>
+                                    <th>Enim Eu Turpis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Urna id volutpat lacus laoreet non. Neque vitae tempus quam pellentesque nec nam aliquam sem et.</td>
+                                    <td>Liquam id diam maecenas ultricies mi eget. Venenatis lectus magna fringilla urna porttitor rhoncus dolor.</td>
+                                    <td>Adipiscing elit ut aliquam purus sit amet. Mauris cursus mattis molestie a iaculis at erat.</td>
+                                </tr>
+                            </tbody>
+                          </table>
+                          <div class="more-images-wrapper clearfix">
+                            <figure class="align-left">
+                                <img src="assets/images/blog/single-blog/single-blog-content-Image-left.jpg" alt="single-blog-content-Image">
+                                <figcaption>Image: Lorem Ipsum</figcaption>
+                              </figure>
+                              <figure class="align-right">
+                                <img src="assets/images/blog/single-blog/single-blog-content-Image-right.jpg" alt="single-blog-content-Image">
+                                <figcaption>Image: Lorem Ipsum</figcaption>
+                              </figure>
+                          </div>
+                          <h2>Suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Turpis massa sed elementum tempus. Elementum integer enim neque volutpat ac tincidunt vitae</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim lobortis scelerisque fermentum dui faucibus. Dignissim cras tincidunt lobortis feugiat. Egestas diam in arcu cursus euismod quis viverra nibh cras. Mi sit amet mauris commodo quis. Sollicitudin nibh sit amet commodo nulla facilisi nullam. Lectus urna duis convallis convallis. Lectus proin nibh nisl condimentum id venenatis a. Et odio pellentesque diam volutpat commodo sed. Tristique risus nec feugiat in fermentum posuere urna nec tincidunt.</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim lobortis scelerisque fermentum dui faucibus. Dignissim cras tincidunt lobortis feugiat. Egestas diam in arcu cursus euismod quis viverra nibh cras. Mi sit amet mauris commodo quis. Sollicitudin nibh sit amet commodo nulla facilisi nullam. Lectus urna duis convallis convallis. Lectus proin nibh nisl condimentum id venenatis a. Et odio pellentesque diam volutpat commodo sed. Tristique risus nec feugiat in fermentum posuere urna nec tincidunt.</p>
                     </div>
                 </div>
-
             </div>
+        </section>
 
+        <section class="related-blog-posts-section latest-blog-posts-section">
+            <div class="related-blog-posts-wrapper latest-blog-posts-wrapper">
+                <div class="container">
+                    <div class="row latest-blog-posts-row">
+                        <header class="main-heading col-md-12 align-center">
+                            <h1 class="main-title">Related articles</h1>
+                        </header>
+                        <div class="latest-blog-posts-items col-md-12">
+                            <div class="latest-blog-posts-items-row row">
+                                <div class="latest-blog-posts-item col-md-4">
+                                    <div class="latest-blog-posts-item-inner">
+                                        <a href="blog-single-page.html" class="latest-blog-posts-item-link">
+                                            <div class="latest-blog-post-featured-image-wrap">
+                                                <div class="latest-blog-post-featured-image" style="background-image: url(assets/images/blog/Image-Article-1.jpg);" area-label="Image-Article-1"></div>
+                                            </div>
+                                            <div class="latest-blog-post-date-header-button-wrap">
+                                                <div class="latest-blog-post-date">
+                                                    <span>Saturday, 14 April</span>
+                                                </div>
+                                                
+                                                <header class="post-heading">
+                                                    <h3 class="post-title">Lectus urna duis convallis convallis</h3>
+                                                </header>
+                                                <div class="read-more-link">
+                                                    <span class="link link-primary link-arrow-right">Read more <i class="icon icon-angle-right"><img src="assets/images/Arrow.png" alt="Arrow right icon"></i></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div> <!-- /.latest-blog-posts-item col-md-4 -->
+                                <div class="latest-blog-posts-item col-md-4">
+                                    <div class="latest-blog-posts-item-inner">
+                                        <a href="blog-single-page.html" class="latest-blog-posts-item-link">
+                                            <div class="latest-blog-post-featured-image-wrap">
+                                                <div class="latest-blog-post-featured-image" style="background-image: url(assets/images/blog/Image-Article2.jpg);" area-label="Image-Article-1"></div>
+                                            </div>
+                                            <div class="latest-blog-post-date-header-button-wrap">
+                                                <div class="latest-blog-post-date">
+                                                    <span>Saturday, 14 April</span>
+                                                </div>
+                                                <header class="post-heading">
+                                                    <h3 class="post-title">Tristique risus nec feugiat in fermentum posuere</h3>
+                                                </header>
+                                                <div class="read-more-link">
+                                                    <span class="link link-primary link-arrow-right">Read more <i class="icon icon-angle-right"><img src="assets/images/Arrow.png" alt="Arrow right icon"></i></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div> <!-- /.latest-blog-posts-item col-md-4 -->
+                                <div class="latest-blog-posts-item col-md-4">
+                                    <div class="latest-blog-posts-item-inner">
+                                        <a href="blog-single-page.html" class="latest-blog-posts-item-link">
+                                            <div class="latest-blog-post-featured-image-wrap">
+                                                <div class="latest-blog-post-featured-image" style="background-image: url(assets/images/blog/Image-Article3.jpg);" area-label="Image-Article-1"></div>
+                                            </div>
+                                            <div class="latest-blog-post-date-header-button-wrap">
+                                                <div class="latest-blog-post-date">
+                                                    <span>Saturday, 14 April</span>
+                                                </div>
+                                                <header class="post-heading">
+                                                    <h3 class="post-title">Dignissim cras tincidunt lobortis</h3>
+                                                </header>
+                                                <div class="read-more-link">
+                                                    <span class="link link-primary link-arrow-right">Read more <i class="icon icon-angle-right"><img src="assets/images/Arrow.png" alt="Arrow right icon"></i></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div> <!-- /.latest-blog-posts-item col-md-4 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
@@ -317,8 +426,8 @@
     <script data-cfasync="false" src="cms/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <!-- <script type="text/javascript" src="cms/conbox/assets/scripts/simplelightbox/simple-lightbox.min.js"></script> -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="assets/js/sticky-social.js"></script>
     <script type="text/javascript" src="assets/js/slick.js"></script>
+    <script type="text/javascript" src="assets/js/sticky-social.js"></script>
     <!-- <script type="text/javascript" src="assets/js/tabs.js"></script> -->
     <script type="text/javascript" src="cms/conbox/box/box.js"></script>
     <script type="text/javascript" src="cms/theme/Box/js/functions.js"></script>
